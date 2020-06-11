@@ -1,2 +1,2 @@
-# TextEditor
-Text editor with various possibilities
+Login: admin
+Password: admin

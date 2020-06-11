@@ -1,0 +1,700 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    font-family: "Helvetica";
+}
+
+.controlPanel,
+.controlPanel2 {
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.f1,
+.f2 {
+    display: flex;
+    align-items: center;
+}
+
+.mainButtons {
+    height: 60px;
+    width: 60px;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    background-color: white;
+}
+
+.mainButtons:hover {
+    cursor: pointer;
+    background-color: black;
+    transition: 0.2s;
+    border: 1px solid white;
+    color: white;
+}
+
+.cursive,
+.underline,
+.centerPosition,
+.fontSize,
+.color {
+    border-radius: 1px;
+}
+
+.control,
+.bold,
+.leftPosition,
+.fontFamily,
+.signIn,
+.save {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.control,
+.lineThrough,
+.rightPosition,
+.background,
+.signIn,
+.ul {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.control,
+.lineThrough,
+.rightPosition,
+.background {
+    margin-right: 20px;
+}
+
+i {
+    font-size: 18px;
+}
+
+.signIn>i {
+    color: #eb5060;
+}
+
+#underline {
+    font-size: 17px;
+    margin-top: 2px;
+}
+
+#arrowDown1 {
+    margin-left: 1px;
+}
+
+#arrowDown2 {
+    margin-left: 3px;
+}
+
+.text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    font-size: 20px;
+    text-align: left;
+}
+
+.text>p {
+    margin-bottom: 15px;
+}
+
+.boldClick {
+    font-weight: bold;
+}
+
+.cursiveClick {
+    font-style: italic;
+}
+
+.underlineClick {
+    text-decoration: underline;
+}
+
+.lineThroughClick {
+    text-decoration: line-through;
+}
+
+.leftPositionClick {
+    text-align: left;
+}
+
+.centerPositionClick {
+    text-align: center;
+}
+
+.rightPositionClick {
+    text-align: right;
+}
+
+.ulFont,
+.ulSize {
+    position: absolute;
+    list-style: none;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 22px;
+    top: 80px;
+    width: 125px;
+    display: none;
+}
+
+.ulFont {
+    line-height: 1.5em;
+    left: 58vw;
+    height: 200px;
+}
+
+.ulSize {
+    left: 58vw;
+    height: 370px;
+}
+
+.ulFont>li:first-child {
+    font-family: Arial;
+}
+
+.ulFont>li:nth-child(2) {
+    font-family: Impact;
+}
+
+.ulFont>li:nth-child(3) {
+    font-family: 'Gill Sans';
+}
+
+.ulFont>li:nth-child(4) {
+    font-family: Tahoma;
+}
+
+.ulFont>li:nth-child(5) {
+    font-family: Verdana;
+}
+
+.ulFont>li:hover {
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.ulSize>li {
+    margin-bottom: 10px;
+}
+
+.ulSize>li:hover {
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    text-align: center;
+    border-radius: 5px;
+}
+
+
+.ulSize>li:nth-child(10) {
+    margin-bottom: 0px;
+}
+
+.textColor {
+    width: 650px;
+    height: 350px;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: black;
+    margin: auto;
+}
+
+.textColorTitle>h2 {
+    margin-bottom: 10px;
+    font-family: Verdana;
+    margin-left: 5px;
+    color: white;
+}
+
+.colors,
+.colors2,
+.images {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.colorBlock,
+.colorBlock2 {
+    width: 80px;
+    height: 80px;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.images {
+    display: none;
+}
+
+.colorBlock,
+.colorBlock2,
+.imagesBlock:hover {
+    cursor: pointer;
+}
+
+.modal1,
+.modal2,
+.modal3,
+.modal4,
+.modal5,
+.modal6,
+.modal7 {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 105px;
+}
+
+.backgroundModal {
+    margin: auto;
+    width: 650px;
+    height: 380px;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: black;
+}
+
+.backgroundModalTitle,
+.textColorTitle,
+.modalCreateTableTitle,
+.createOLtitle,
+.createULtitle {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5px;
+    color: white;
+}
+
+.createOLtitle,
+.createULtitle {
+    margin-left: 0px;
+}
+
+.textColorTitle {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.backgroundModalTitle>i {
+    font-size: 30px;
+    margin-right: 5px;
+    color: white;
+}
+
+.textColorTitle>i {
+    font-size: 30px;
+    margin-right: 12px;
+    color: white;
+}
+
+.modalCreateTableTitle>i {
+    font-size: 30px;
+    margin-right: 15px;
+    color: white;
+}
+
+.backgroundModalTitle>i:hover,
+.textColorTitle>i:hover,
+.modalCreateTableTitle>i:hover,
+.createOLtitle>i:hover,
+.createULtitle>i:hover {
+    color: #eb5060;
+    cursor: pointer;
+}
+
+.createOLtitle>i,
+.createULtitle>i {
+    font-size: 30px;
+    color: white;
+}
+
+.choice {
+    display: flex;
+}
+
+.choice>p {
+    width: 100px;
+    height: 40px;
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 40px;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+
+.backgroundModalTitle>h2 {
+    font-family: Verdana;
+    margin-left: 5px;
+    color: white;
+}
+
+.choice>p:hover {
+    cursor: pointer;
+    color: white;
+    border: 2px solid white;
+    background-color: black;
+}
+
+#colorsChoiceButton {
+    color: white;
+    border: 2px solid white;
+    background-color: black;
+}
+
+.imagesBlock {
+    width: 145px;
+    height: 80px;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-left: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.files {
+    display: flex;
+}
+
+.browse {
+    width: 400px;
+    height: 40px;
+    border: 1px solid white;
+    color: white;
+    border-radius: 5px;
+    line-height: 40px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    padding-left: 20px;
+    margin-left: 5px;
+}
+
+.browseButton {
+    height: 40px;
+    width: 100px;
+    border: 1px solid white;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 40px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    background-color: rgb(240, 240, 240);
+    ;
+}
+
+label,
+.browseButton:hover {
+    cursor: pointer;
+}
+
+.files {
+    display: none;
+}
+
+.signInForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.modalSignIn {
+    margin: auto;
+    width: 500px;
+    height: 285px;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: black;
+}
+
+.modalSignIn>h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    color: white;
+}
+
+.signInForm>input[type="text"] {
+    height: 40px;
+    font-size: 20px;
+    padding-left: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    outline: none;
+    margin-top: 15px;
+}
+
+.signInForm>input[type="button"] {
+    height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px solid white;
+    border-radius: 5px;
+    outline: none;
+    margin-top: 10px;
+}
+
+.signInForm>input[type="button"]:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+
+.signInForm>p {
+    margin-top: 10px;
+    color: #eb5060;
+}
+
+.textarea {
+    width: 100%;
+    height: calc(100vh - 100px);
+    display: none;
+    font-size: 20px;
+    resize: none;
+    padding: 20px;
+}
+
+.controlPanel2 {
+    display: none;
+}
+
+.modalCreateTable {
+    margin: auto;
+    width: 850px;
+    height: 450px;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: black;
+}
+
+.modalCreateTable>h2 {
+    font-size: 26px;
+    margin-left: 15px;
+    color: white;
+}
+
+.tableFlex {
+    display: flex;
+    justify-content: space-around;
+}
+
+.selectTable {
+    display: flex;
+    justify-content: space-between;
+}
+
+.leftSideTable,
+.rightSideTable {
+    width: 370px;
+}
+
+.leftSideTable>p,
+.rightSideTable>p,
+.selectTable1>p,
+.selectTable2>p {
+    margin-top: 20px;
+    font-size: 20px;
+    color: white;
+}
+
+.leftSideTable>input,
+.rightSideTable>input,
+.mainOL>input,
+.mainUL>input {
+    margin-top: 10px;
+    width: 100%;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 16px;
+    color: black;
+}
+
+.selectTable1>select,
+.selectTable2>select,
+.mainOL>select,
+.mainUL>select {
+    width: 170px;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 16px;
+    color: black;
+}
+
+.mainOL>select,
+.mainUL>select {
+    width: 100%;
+}
+
+#pInvalid,
+#pInvalid2,
+#pInvalid3 {
+    color: #eb5060;
+    visibility: hidden;
+}
+
+.unvisible {
+    visibility: hidden;
+}
+
+#buttonTable1,
+#buttonTable2 {
+    padding-left: 0px;
+}
+
+#buttonTable1,
+#buttonOL1,
+#buttonUL1 {
+    background-color: #eb5060;
+    color: white;
+}
+
+#buttonOL1,
+#buttonOL2,
+#buttonUL1,
+#buttonUL2 {
+    width: 48%;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+#buttonTable2,
+#buttonOL2,
+#buttonUL2 {
+    background-color: #06a10b;
+    color: white;
+}
+
+#buttonTable1,
+#buttonTable2,
+#buttonOL1,
+#buttonOL2,
+#buttonUL1,
+#buttonUL2:hover {
+    cursor: pointer;
+}
+
+.TableConstruction,
+.olConstruction,
+.ulConstruction {
+    display: none;
+}
+
+.createOL,
+.createUL {
+    margin: auto;
+    width: 550px;
+    height: 350px;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: black;
+}
+
+.mainOL>p,
+.mainUL>p {
+    margin-top: 20px;
+    font-size: 20px;
+    color: white;
+}
+
+.buttonsOL,
+.buttonsUL {
+    display: flex;
+    justify-content: space-between;
+}
+
+.TableConstruction,
+.olConstruction,
+.ulConstruction {
+    padding-left: 10px;
+}
+
+.signOut {
+    margin: auto;
+    width: 300px;
+    height: 150px;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: black;
+}
+
+.signOut>h2 {
+    text-align: center;
+    font-size: 25px;
+    font-family: Tahoma;
+    color: white;
+}
+
+.signOut>input {
+    width: 60%;
+    height: 50px;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 16px;
+    margin-left: 20%;
+    background-color: #eb5060;
+    color: white;
+    margin-top: 20px;
+}
+
+.signOut>input:hover {
+    cursor: pointer;
+}
+
+ul,
+ol,
+table {
+    margin-top: 20px;
+}
